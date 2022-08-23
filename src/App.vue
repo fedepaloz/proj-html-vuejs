@@ -1,24 +1,20 @@
 <template>
   <div>
-<BaseHeader></BaseHeader>
+    <BaseHeader></BaseHeader>
   </div>
 </template>
 
 <script>
-
-import BaseHeader from './components/BaseHeader.vue';
-
-
+import BaseHeader from "./components/BaseHeader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    BaseHeader
-}
-}
+    BaseHeader,
+  },
+};
 </script>
 
 <style lang="scss">
-
-@import'./sass/style.scss'
+@import "./sass/style.scss";
 </style>

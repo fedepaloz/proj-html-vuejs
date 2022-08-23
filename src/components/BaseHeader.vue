@@ -1,18 +1,14 @@
 <template>
   <header>
-    <div class="row d-flex">
-      <div class="col-6">
-        <img src="../assets/avada-img/avada-logo/avada-music-logo.png" alt="" />
-      </div>
-      <font-awesome-icon icon="fa-solid fa-bars" />
-      
-    </div>
+    <BaseLogo></BaseLogo>
   </header>
 </template>
 
 <script>
+import BaseLogo from './BaseLogo.vue';
 export default {
-  name: "BaseHeader",
+    name: "BaseHeader",
+    components: { BaseLogo }
 };
 </script>
 
