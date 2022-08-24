@@ -1,21 +1,23 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
+    <BaseHeader></BaseHeader>
 
     <SectionTitle></SectionTitle>
   </div>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue";
+import BaseHeader from "./components/BaseHeader.vue";
 import SectionTitle from "./components/SectionTitle.vue";
+
 
 export default {
   name: "App",
   components: {
-    TheHeader,
+    BaseHeader,
     SectionTitle,
-  },
+   
+},
 };
 </script>
 
