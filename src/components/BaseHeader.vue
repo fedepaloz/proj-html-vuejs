@@ -1,9 +1,9 @@
 <template>
   <header>
-    <div v-if="!visible" class="navbar">
-      <div class="row justify-content-between">
-        <div class="col-4"><BaseLogo></BaseLogo></div>
-        <div class="col-1 bars">
+    <div class="container-fluid" v-if="!visible">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-2"><BaseLogo></BaseLogo></div>
+        <div class="col-1">
           <button @click="visible = true" class="openbtn">
             <font-awesome-icon icon="fa-solid fa-bars" />
           </button>
@@ -22,7 +22,9 @@
         </ul>
       </div>
     </div>
+  
   </header>
+  
 </template>
 
 <script>
@@ -30,7 +32,7 @@ import BaseLogo from "./BaseLogo.vue";
 export default {
   data() {
     return {
-      visible: true,
+      visible: false,
     };
   },
   name: "BaseHeader",
