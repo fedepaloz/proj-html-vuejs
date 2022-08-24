@@ -3,16 +3,16 @@
     <SectionTitle></SectionTitle>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4">
+        <div class="col-4" v-for="newsCard in newsCards" :key='newsCard.id'>
           <figure class="figure">
             <img
-              src="../assets/avada-img/avada-band-news/blog-post1-600x900.jpg"
+              src=""
               class="figure-img img-fluid rounded"
-              alt=""
+              alt="card"
             />
             <figcaption class="figure-caption">
-              <h3>ajajiajijijaiajiajiiajij</h3>
-              <h4>ahaahauhuhauhauhuahuahau</h4>
+              <h3>{{newsCard.title}}</h3>
+              <h4>{{newsCard.text}}</h4>
             </figcaption>
           </figure>
         </div>
@@ -29,7 +29,7 @@ export default {
     SectionTitle,
   },
   props:{
-    
+    newsCards: Array
   }
 };
 </script>

@@ -3,8 +3,9 @@
     <BaseHeader></BaseHeader>
     <BaseJumbo :mainTitle="mainTitle"></BaseJumbo>
     <SectionTitle></SectionTitle>
-    <BandNews></BandNews>
+    <BandNews :newsCards="newsMenu"></BandNews>
     <MusicPlayer></MusicPlayer>
+    <LiveDates></LiveDates>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import SectionTitle from "./components/SectionTitle.vue";
 import BaseJumbo from "./components/BaseJumbo.vue";
 import BandNews from "./components/BandNews.vue";
 import MusicPlayer from "./components/MusicPlayer.vue";
+import LiveDates from "./components/LiveDates.vue";
 
 export default {
   name: "App",
@@ -21,8 +23,8 @@ export default {
     return {
       mainTitle: "Untold Stories",
       
-      songCards: [
-        { id: 1, img: "", title: "technology", text: "tecnology" },
+      newsMenu: [
+        { id: 1, img: '', title: "technology", text: "tecnology" },
         { id: 2, img: "", title: "old school", text: "old school" },
         { id: 3, img: "", title: "guitar", text: "guitar" },
         { id: 4, img: "", title: "sound", text: "sound" },
@@ -37,7 +39,8 @@ export default {
     BaseJumbo,
     BandNews,
     MusicPlayer,
-  },
+    LiveDates
+},
 };
 </script>
 
