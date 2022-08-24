@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row flex-column align-items-center">
         <div class="col text-white text-center">
-          <h1>untold stories</h1>
+          <h1>{{mainTitle}}</h1>
           <h4>here is an untold story behind every favorite song.</h4>
           <button type="button" class="btn btn-dark">Latest Album</button><button type="button" class="btn btn-dark">Live Dates</button>
         </div>
@@ -13,7 +13,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    mainTitle: String
+
+  }
+};
 </script>
 
 <style>
