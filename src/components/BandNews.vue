@@ -3,7 +3,7 @@
     <SectionTitle></SectionTitle>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4" v-for="newsCard in newsCards" :key='newsCard.id'>
+        <div class="col" v-for="newsCard in newsCards" :key='newsCard.id'>
           <figure class="figure">
             <img
               :src="newsCard.img"
@@ -42,10 +42,7 @@ export default {
 h3 {
   color: $mandy;
 }
-.figure-img {
-  width: 400px;
-  height: 400px;
-}
+
 .band-news{
     background-color: $grey-dark;
 }

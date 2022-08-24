@@ -55,10 +55,13 @@ header {
 #menu {
   height: 100vh;
   background-color: $mandy;
+  
 }
 
 .menu-list {
   list-style-type: none;
   padding-top: 300px;
+  :hover{color: black;}
+  cursor: pointer;
 }
 </style>
