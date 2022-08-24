@@ -1,20 +1,17 @@
 <template>
   <div id="live-dates">
     <div class="container">
-      <div class="row justify-content-center ">
+      <div v-for="datesCard in datesCards" :key="datesCard.id" class="row justify-content-center ">
         <div @click="visible = true" class="col-10 text-center date-list">
-          <h2>prova</h2>
+          <h2>{{datesCard.date}}</h2>
           <div v-if="visible" id="date-book">
             <div class="row">
               <div class="col">
-                <h2 class="text-white">untold stories</h2>
+                <h2 class="text-white">{{datesCard.title}}</h2>
                 <h3>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-                  magni rem atque sunt fugit reiciendis blanditiis dicta
-                  sapiente commodi, facere neque, maxime nobis excepturi, saepe
-                  voluptatibus cumque obcaecati? Libero, aspernatur.
+                 {{datesCard.text}}
                 </h3>
-                <button class="button">book now</button>
+                <button class="button">{{datesCard.book}}</button>
               </div>
             </div>
           </div>
@@ -26,6 +23,9 @@
 
 <script>
 export default {
+    props:{
+      datesCards:Array  
+    },
   data() {
     return {
       visible: false,

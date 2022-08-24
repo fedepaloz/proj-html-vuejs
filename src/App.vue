@@ -6,7 +6,7 @@
     <BandNews :newsCards="newsMenu"></BandNews>
     <MusicPlayer></MusicPlayer>
     <SectionTitle></SectionTitle>
-    <LiveDates></LiveDates>
+    <LiveDates :datesCards="datesMenu"></LiveDates>
   </div>
 </template>
 
@@ -46,11 +46,11 @@ export default {
           text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
           book:'BOOK NOW'
         },{
-          id:1,date:'07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO',title:'Untold Stories',
+          id:4,date:'07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO',title:'Untold Stories',
           text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
           book:'BOOK NOW'
         },{
-          id:1,date:'10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA',title:'Untold Stories',
+          id:5,date:'10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA',title:'Untold Stories',
           text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
           book:'BOOK NOW'
         },
