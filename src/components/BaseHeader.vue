@@ -6,6 +6,7 @@
         <button><font-awesome-icon  icon="fa-solid fa-bars" /></button>
       </div>
     </div>
+    
   </header>
 </template>
 
@@ -22,6 +23,7 @@ header {
   background-color: #262833;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 .bars {
   color: white;
