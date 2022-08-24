@@ -6,7 +6,7 @@
         <div class="col-4" v-for="newsCard in newsCards" :key='newsCard.id'>
           <figure class="figure">
             <img
-              src=""
+              :src="newsCard.img"
               class="figure-img img-fluid rounded"
               alt="card"
             />

@@ -24,12 +24,12 @@ export default {
       mainTitle: "Untold Stories",
       
       newsMenu: [
-        { id: 1, img: '', title: "technology", text: "tecnology" },
-        { id: 2, img: "", title: "old school", text: "old school" },
-        { id: 3, img: "", title: "guitar", text: "guitar" },
-        { id: 4, img: "", title: "sound", text: "sound" },
-        { id: 5, img: "", title: "rock", text: "rock" },
-        { id: 6, img: "", title: "legend", text: "legend" },
+        { id: 1, img: './avada-band-news/blog_music_techo-800x400.jpg',title: "technology", text: "tecnology" },
+        { id: 2, img: "./avada-band-news/blog-post1-600x900.jpg", title: "old school", text: "old school" },
+        { id: 3, img: "./avada-band-news/blog-post2-600x900.jpg", title: "guitar", text: "guitar" },
+        { id: 4, img: "./avada-band-news/blog_flavor_rock-800x400.jpg", title: "sound", text: "sound" },
+        { id: 5, img: "./avada-band-news/blog-post3-600x900.jpg", title: "rock", text: "rock" },
+        { id: 6, img: "./avada-band-news/blog-post4-600x900.jpg", title: "legend", text: "legend" },
       ],
     };
   },
