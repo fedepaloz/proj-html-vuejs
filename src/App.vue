@@ -5,6 +5,7 @@
     <SectionTitle></SectionTitle>
     <BandNews :newsCards="newsMenu"></BandNews>
     <MusicPlayer></MusicPlayer>
+    <SectionTitle></SectionTitle>
     <LiveDates></LiveDates>
   </div>
 </template>
@@ -31,6 +32,29 @@ export default {
         { id: 5, img: "./avada-band-news/blog-post3-600x900.jpg", title: "rock", text: "rock" },
         { id: 6, img: "./avada-band-news/blog-post4-600x900.jpg", title: "legend", text: "legend" },
       ],
+      datesMenu:[
+        {
+          id:1,date:'17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA',title:'Untold Stories',
+          text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
+          book:'BOOK NOW'
+        },{
+          id:2,date:'24/9/2020 GROOVEFEST DOMINICAL REPUBLIC',title:'Untold Stories',
+          text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
+          book:'BOOK NOW'
+        },{
+          id:3,date:'31/10/2020 OASIS FESTIVAL 2020, MOROCCO',title:'Untold Stories',
+          text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
+          book:'BOOK NOW'
+        },{
+          id:1,date:'07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO',title:'Untold Stories',
+          text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
+          book:'BOOK NOW'
+        },{
+          id:1,date:'10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA',title:'Untold Stories',
+          text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',visibility:'true',accept:'I accept',
+          book:'BOOK NOW'
+        },
+      ]
     };
   },
   components: {
