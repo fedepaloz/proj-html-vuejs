@@ -4,9 +4,11 @@
     <BaseJumbo :mainTitle="mainTitle"></BaseJumbo>
     <SectionTitle></SectionTitle>
     <BandNews :newsCards="newsMenu"></BandNews>
+    <ViewMenu></ViewMenu>
     <MusicPlayer></MusicPlayer>
     <SectionTitle></SectionTitle>
     <LiveDates :datesCards="datesMenu"></LiveDates>
+    <ViewMenu></ViewMenu>
   </div>
 </template>
 
@@ -17,6 +19,7 @@ import BaseJumbo from "./components/BaseJumbo.vue";
 import BandNews from "./components/BandNews.vue";
 import MusicPlayer from "./components/MusicPlayer.vue";
 import LiveDates from "./components/LiveDates.vue";
+import ViewMenu from "./components/ViewMenu.vue";
 
 export default {
   name: "App",
@@ -63,7 +66,8 @@ export default {
     BaseJumbo,
     BandNews,
     MusicPlayer,
-    LiveDates
+    LiveDates,
+    ViewMenu
 },
 };
 </script>
