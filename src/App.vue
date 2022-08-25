@@ -9,7 +9,7 @@
     <SectionTitle></SectionTitle>
     <LiveDates :datesCards="datesMenu"></LiveDates>
     <ViewMenu></ViewMenu>
-    <TheFooter></TheFooter>
+    <TheFooter :footerItems="footerMenu"></TheFooter>
   </div>
 </template>
 
@@ -28,6 +28,29 @@ export default {
   data() {
     return {
       mainTitle: "Untold Stories",
+
+      footerMenu:[
+        {
+          id:1,
+          text:'home'
+        },
+        {
+          id:2,
+          text:'meet the band'
+        },{
+          id:3,
+          text:'live dates'
+        },{
+          id:4,
+          text:'latest news'
+        },{
+          id:5,
+          text:'albums'
+        },{
+          id:6,
+          text:'fans'
+        },
+      ],
 
       newsMenu: [
         {
@@ -114,6 +137,7 @@ export default {
           book: "BOOK NOW",
         },
       ],
+      
     };
   },
   components: {

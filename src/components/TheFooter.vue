@@ -3,23 +3,13 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col"><BaseLogo></BaseLogo></div>
-        <div class="col">
-          <ul class="d-flex justify-content-around list-unstyled text-white">
-            <li>
-              <h5>home</h5>
+        <div class="col d-flex">
+          <ul class="justify-content-around list-unstyled text-white" v-for="footerItem in footerItems"
+          :key="footerItem.id">
+            <li class="px-2">
+              <h5>{{footerItem.text}}</h5>
             </li>
-            <li>
-              <h5>home</h5>
-            </li>
-            <li>
-              <h5>pippo</h5>
-            </li>
-            <li>
-              <h5>home</h5>
-            </li>
-            <li>
-              <h5>home</h5>
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -48,6 +38,9 @@ import BaseLogo from "./BaseLogo.vue";
 export default {
   name: "TheFooter",
   components: { BaseLogo },
+  props:{
+footerItems:Array
+  }
 };
 </script>
 
