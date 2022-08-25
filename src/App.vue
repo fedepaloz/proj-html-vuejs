@@ -9,6 +9,7 @@
     <SectionTitle></SectionTitle>
     <LiveDates :datesCards="datesMenu"></LiveDates>
     <ViewMenu></ViewMenu>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import BandNews from "./components/BandNews.vue";
 import MusicPlayer from "./components/MusicPlayer.vue";
 import LiveDates from "./components/LiveDates.vue";
 import ViewMenu from "./components/ViewMenu.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   name: "App",
@@ -67,7 +69,8 @@ export default {
     BandNews,
     MusicPlayer,
     LiveDates,
-    ViewMenu
+    ViewMenu,
+    TheFooter
 },
 };
 </script>
