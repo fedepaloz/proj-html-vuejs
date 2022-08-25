@@ -9,7 +9,8 @@ import{faInstagram} from '@fortawesome/free-brands-svg-icons'
 import{faFacebook} from '@fortawesome/free-brands-svg-icons'
 import{faTwitter}from '@fortawesome/free-brands-svg-icons'
 import{faYoutube} from '@fortawesome/free-brands-svg-icons'
-library.add(faBars,faInstagram,faFacebook,faTwitter,faYoutube)
+import{faPlay}from'@fortawesome/free-solid-svg-icons'
+library.add(faBars,faInstagram,faFacebook,faTwitter,faYoutube,faPlay)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
