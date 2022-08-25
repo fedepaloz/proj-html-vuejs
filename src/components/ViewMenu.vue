@@ -13,4 +13,10 @@ export default {};
 #view-menu {
   background-color: $mandy;
 }
+#view-menu:hover{
+  background-color: white;
+
+
+}
+
 </style>

@@ -3,7 +3,7 @@
     
     <div class="container-fluid">
       <div class="row">
-        <div class="col" v-for="newsCard in newsCards" :key='newsCard.id'>
+        <div id="news-band-card" class="col" v-for="newsCard in newsCards" :key='newsCard.id'>
           <figure class="figure">
             <img
               :src="newsCard.img"
@@ -15,11 +15,13 @@
               <h4>{{newsCard.text}}</h4>
             </figcaption>
           </figure>
+          
+          </div>
         </div>
         
       </div>
     </div>
-  </div>
+  
 </template>
 
 <script>
@@ -37,6 +39,8 @@ export default {
 .figure {
   background-color: $grey-light;
 }
+
+ 
 h3 {
   color: $mandy;
 }
@@ -44,4 +48,7 @@ h3 {
 .band-news{
     background-color: $grey-dark;
 }
+
+
+
 </style>
