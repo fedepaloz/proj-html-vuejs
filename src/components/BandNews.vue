@@ -1,6 +1,6 @@
 <template>
   <div class="band-news">
-    <SectionTitle></SectionTitle>
+    
     <div class="container-fluid">
       <div class="row">
         <div class="col" v-for="newsCard in newsCards" :key='newsCard.id'>
@@ -23,11 +23,9 @@
 </template>
 
 <script>
-import SectionTitle from "./SectionTitle.vue";
+
 export default {
-  components: {
-    SectionTitle,
-  },
+  
   props:{
     newsCards: Array
   }

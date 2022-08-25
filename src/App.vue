@@ -2,11 +2,13 @@
   <div>
     <BaseHeader></BaseHeader>
     <BaseJumbo :mainTitle="mainTitle"></BaseJumbo>
-    <SectionTitle></SectionTitle>
+    <SectionTitle :sezione="sezione"></SectionTitle>
+    <SectionTitle :sezione="sezione2"></SectionTitle>
+    
     <BandNews :newsCards="newsMenu"></BandNews>
     <ViewMenu></ViewMenu>
     <ThePlayer></ThePlayer>
-    <SectionTitle></SectionTitle>
+    <SectionTitle :sezione="sezione3"></SectionTitle>
     <LiveDates :datesCards="datesMenu"></LiveDates>
     <ViewMenu></ViewMenu>
     <TheFooter :footerItems="footerMenu"></TheFooter>
@@ -28,7 +30,9 @@ export default {
   data() {
     return {
       mainTitle: "Untold Stories",
-
+sezione:'music is life',
+sezione2:'latest band news',
+sezione3:'live dates',
       footerMenu:[
         {
           id:1,
